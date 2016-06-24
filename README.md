@@ -1,4 +1,4 @@
-##Swift Design Pattern of the Day - Observer Pattern 
+##Swift Design Pattern of the Day - Observer Pattern - 6/24/16
 
 Recently I ran into a problem in my Tapstr game code. After having to deal with constraints for the app, I had my original game code become split up between two Viewcontroller files, one which was a container controller for another that was the child view. Now, when I updated the score within the child view, I needed to reflect that change in the container controller. At first, I tried doing ViewController(), but the problem as a result of this was that I ended up getting an error saying that an optional that had been unwrapped was nil. The explanation for this is that the original instance being instantiated was forgetten as doing ViewController() creates a class instance, and thus the UILabel was nil for that. 
 
